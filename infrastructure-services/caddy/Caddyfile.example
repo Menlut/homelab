@@ -1,0 +1,7 @@
+# The production Caddyfile is intentionally not published.
+#
+# A sanitized routing example can be added here later without exposing:
+# - real domains or subdomains
+# - internal addresses
+# - DNS provider credentials
+# - certificate material
