@@ -10,15 +10,15 @@ self-hosted application management.
 
 ## Overview
 
-The homelab runs containerized services on a Debian-based Docker host and is
-organized by service category.
-
 Administrative and internal services are accessed through a reverse proxy and
-local DNS. For remote access, I chose Tailscale as a mesh VPN instead of
-exposing administrative services through router port forwarding.
+local DNS. Remote access in the current deployment is handled by Tailscale, a
+mesh VPN, instead of exposing administrative services through router port
+forwarding.
 
 This approach reduces direct internet exposure while allowing trusted devices
-to securely access selected homelab services.
+to securely access selected homelab services. Tailscale is an implementation
+choice rather than a hard dependency; another secure private-access solution
+could be substituted if deployment requirements change.
 
 ## Repository Structure
 
